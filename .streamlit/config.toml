@@ -1,0 +1,68 @@
+# Streamlit Configuration File
+# .streamlit/config.toml
+
+[theme]
+# Primary color for interactive elements
+primaryColor = "#FF4B4B"
+
+# Background color for the main content area
+backgroundColor = "#FFFFFF"
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = "#F0F2F6"
+
+# Color used for almost all text
+textColor = "#262730"
+
+# Font family for all text in the app
+font = "sans serif"
+
+[server]
+# Maximum size, in megabytes, for files uploaded
+maxUploadSize = 200
+
+# Enables support for websocket compression
+enableWebsocketCompression = true
+
+# Enable CORS (Cross-Origin Resource Sharing)
+enableCORS = false
+
+# Enable XSRF protection
+enableXsrfProtection = true
+
+[browser]
+# Whether to send usage statistics to Streamlit
+gatherUsageStats = false
+
+# Internet address where users should point their browsers
+serverAddress = "0.0.0.0"
+
+# Port where users should point their browsers
+serverPort = 8501
+
+[runner]
+# Allows you to type a variable or string and have it printed
+magicEnabled = true
+
+# Install a Python tracer to allow you to stop or pause your script at any point
+installTracer = false
+
+# Sets the MPLBACKEND environment variable to Agg to prevent conflicts
+fixMatplotlib = true
+
+# Run the Python Garbage Collector after each script execution
+postScriptGC = true
+
+# Handle script rerun requests immediately
+fastReruns = true
+
+[client]
+# Controls whether uncaught app exceptions are displayed in the browser
+showErrorDetails = true
+
+# Change the visibility of the toolbar in the corner of the app
+toolbarMode = "auto"
+
+[deprecation]
+# Set to false to disable the deprecation warning for st.pyplot()
+showPyplotGlobalUse = false
