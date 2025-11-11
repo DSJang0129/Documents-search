@@ -30,6 +30,8 @@ enableCORS = false
 # Enable XSRF protection
 enableXsrfProtection = true
 
+maxCachedMessageSize = 50
+
 [browser]
 # Whether to send usage statistics to Streamlit
 gatherUsageStats = false
@@ -66,3 +68,7 @@ toolbarMode = "auto"
 [deprecation]
 # Set to false to disable the deprecation warning for st.pyplot()
 showPyplotGlobalUse = false
+
+[general]
+base = "python3.11"
+
