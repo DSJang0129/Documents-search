@@ -70,5 +70,7 @@ toolbarMode = "auto"
 showPyplotGlobalUse = false
 
 [general]
-base = "python3.11"
-
+# Streamlit Cloud에서 사용할 Python 버전을 명시하여 안정성을 높입니다.
+# scikit-learn과 같은 라이브러리는 현재 Python 3.10에서 가장 안정적입니다.
+# 3.13 대신 3.10을 사용하도록 설정합니다.
+python = "3.10"
