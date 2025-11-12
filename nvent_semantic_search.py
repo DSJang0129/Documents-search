@@ -223,7 +223,7 @@ def process_file(uploaded_file: BytesIO):
     # 2. 임베딩 생성
     with st.spinner(f"'{uploaded_file.name}' 임베딩 생성 중..."):
         chunk_texts = [chunk["text"] for chunk in chunks_with_location]
-        embeddings = MODEL.encode(chunk_texts, show_progress_bar=False)
+        embeddings = MODEL.encode(chunk_texts)
     
     # 3. 문서 상태 저장
     doc_data = {
@@ -634,3 +634,4 @@ if st.session_state.get("search_history"):
         st.markdown("### 🕐 최근 검색")
         for h in reversed(st.session_state["search_history"][-5:]):
             st.caption(h)
+
