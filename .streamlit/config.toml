@@ -30,8 +30,6 @@ enableCORS = false
 # Enable XSRF protection
 enableXsrfProtection = true
 
-maxCachedMessageSize = 50
-
 [browser]
 # Whether to send usage statistics to Streamlit
 gatherUsageStats = false
@@ -68,8 +66,3 @@ toolbarMode = "auto"
 [deprecation]
 # Set to false to disable the deprecation warning for st.pyplot()
 showPyplotGlobalUse = false
-
-[general]
-# Streamlit Cloud에서 사용할 Python 버전을 명시하여 안정성을 높입니다.
-# scikit-learn과 같은 라이브러리는 현재 Python 3.10에서 가장 안정적입니다.
-pythonVersion = "3.10"
